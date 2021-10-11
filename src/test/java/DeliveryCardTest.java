@@ -21,7 +21,7 @@ public class DeliveryCardTest {
         $("[data-test-id=name] input").setValue("Павел-К");
         $("[data-test-id=phone] input").setValue("+79238456245");
         $("[data-test-id=agreement]").click();
-        $$("button").find(exactText("Забрнировать")).click();
+        $$("button").find(exactText("Забронировать")).click();
 //        $("[data-test-id=notification]").shouldBe(visible, Duration.ofSeconds(11));
         $(withText("Успешно!")).shouldBe(exactText("Успешно!"), Duration.ofSeconds(11));
         $(withText("Встреча успешно забронирована на")).shouldHave(exactText("Встреча успешно забронирована на 14.10.2021"));
