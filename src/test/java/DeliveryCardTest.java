@@ -14,7 +14,7 @@ public class DeliveryCardTest {
     void shouldDeliveryCardOrder() {
         open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Кемерово");
-        $("[data-test-id=date] input").doubleClick().clear();
+        $("[data-test-id=date] input").doubleClick().sendKeys("");
         String dateOfMeeting = LocalDate.now().plusDays(5).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         $("[data-test-id=date] input").setValue(dateOfMeeting);
         $("[data-test-id=name] input").setValue("Павел-К");
