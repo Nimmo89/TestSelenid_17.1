@@ -3,7 +3,6 @@ import org.junit.jupiter.api.Test;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.*;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
@@ -12,7 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class DeliveryCardTest {
 
     @Test
-    void should() {
+    void shouldDeliveryCardOrder() {
         open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Кемерово");
         $("[data-test-id=date] input").doubleClick().clear();
