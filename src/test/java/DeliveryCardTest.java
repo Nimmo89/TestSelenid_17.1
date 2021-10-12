@@ -6,7 +6,7 @@ import java.util.*;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
-
+//Вариант сделанный мной с помощью интернета
 public class DeliveryCardTest {
 
     @Test
